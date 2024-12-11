@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <span id="name-error" class="error-message"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <span id="email-error" class="error-message"></span>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" /><br /><br />
+      <span id="phone-error" class="error-message"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br /><br />
+      <span id="message-error" class="error-message"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2 id="display_name"></h2>
+    <h2 id="display_email"></h2>
+    <h2 id="display_phone"></h2>
+    <h2 id="display_message"></h2>
+    <script src="script.js"></script>
+  </body>
+</html>
